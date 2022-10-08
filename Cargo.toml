@@ -1,0 +1,15 @@
+[package]
+name = "first_scanner"
+version = "0.1.0"
+edition = "2021"
+authors = ["Bradley Dowling"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.65"
+async-trait = "0.1.57"
+clap = "4.0.10"
+env_logger = "0.9.1"
+rayon = "1.5.3"
+thiserror = "1.0.37"
+tokio = "1.21.2"
