@@ -3,7 +3,7 @@ impl GitHeadDisclosure {
         GitHeadDisclosure {}
     }
 
-    fn is_head_file(&file, content: &str) -> bool {
+    fn is_head_file(&self, content: &str) -> bool {
         return Some(0) == content.to_lowercase().trim().find("ref:");
     }
 }

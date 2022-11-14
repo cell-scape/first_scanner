@@ -1,5 +1,8 @@
 use rayon::prelude::*;
 use thiserror::Error;
+use anyhow;
+use std::time::Duration;
+use tokio;
 
 #[derive(Error, Debug, Clone)]
 pub enum Error {
@@ -11,8 +14,8 @@ pub enum Error {
 fn main() -> Result<(), anyhow::Error> {
     let http_timeout = Duration::from_secs(10);
     let http_client = Client::builder().timeout(http_timeout).build()?;
-    let ports_concurrency = 200
-    let subdomains_concurrency = 100
+    let ports_concurrency = 200;
+    let subdomains_concurrency = 100;
     let sccan start
 
     let pool = rayon::ThreadPoolBuilder::new()
